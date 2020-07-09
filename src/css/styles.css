@@ -1,0 +1,359 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(46, 41, 41);
+    font-family: 'Lato', sans-serif;
+}
+
+nav .container .brand-logo {
+    font-size: 3.2rem;
+}
+
+nav ul a {
+    font-size: 1.6rem;
+}
+
+nav {
+    font: 1.6rem;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+
+.nav-wrapper .sidenav-trigger {
+    font-size: 3rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.about,
+.reference,
+.contact {
+    padding: 3rem;
+}
+
+
+.more {
+    font-size: 1.6rem;
+}
+
+.profile-img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.more p {
+    margin-bottom: 1rem;
+}
+
+.more .fab {
+    padding-right: 10px;
+}
+
+.more a {
+    display: block;
+    text-decoration: none;
+    /* text-align: left; */
+    color: black;
+    /* padding: 0 43rem; */
+}
+
+.linkedin:hover {
+    color: #007bb5;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.instagram:hover {
+    color: #5b0f6e;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.rules-list {
+    margin-left: 2rem;
+}
+
+.player-1-panel,
+.player-2-panel {
+    float: left;
+    width: 50%;
+    padding: 7rem;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.player-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.player-score {
+    font-size: 5rem;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 15rem;
+}
+
+.player-current {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 2rem;
+}
+
+.home {
+    margin: 10rem auto;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    width: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+    vertical-align: baseline;
+    padding: 1rem;
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-new {
+    top: 4.5rem;
+}
+
+.btn-roll {
+    top: 36rem;
+}
+
+.btn-hold {
+    top: 42rem;
+}
+
+
+button:hover {
+    font-weight: 600;
+}
+
+.home>button:focus {
+    outline: none;
+    background-color: transparent !important;
+}
+
+button:hover .fas {
+    margin-right: 2rem;
+}
+
+button .fas {
+    margin-right: 1.2rem;
+    color: #EB4D4D;
+    padding-bottom: 5px;
+    transition: margin 0.3s;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+#dice-1 {
+    top: 11rem;
+}
+
+#dice-2 {
+    top: 25rem;
+}
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name {
+    color: black;
+}
+
+.winner .player-name {
+    color: #EB4D4D;
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .dice {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+
+    .dice {
+        width: 70px;
+        height: 70px;
+    }
+
+    .player-name {
+        font-size: 2.5rem;
+    }
+
+    .player-score {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+
+    #dice-1 {
+        top: 10rem;
+    }
+
+    #dice-2 {
+        top: 20rem;
+    }
+
+    .dice {
+        width: 55px;
+        height: 55px;
+    }
+
+    .player-name {
+        margin-bottom: 10rem;
+        font-size: 1.8rem;
+    }
+
+    .player-current {
+        width: 50%;
+    }
+
+    .player-current-label {
+        font-size: .9rem;
+    }
+
+    .player-score {
+        margin-bottom: 10rem;
+    }
+
+    .fas {
+        font-size: 2rem;
+    }
+
+    .player-1-panel,
+    .player-2-panel {
+        padding: 3rem;
+    }
+
+    button {
+        font-size: .9rem;
+    }
+
+    .card-about {
+        padding: 2rem;
+    }
+
+    .btn-new {
+        top: .5rem;
+    }
+
+    .btn-roll {
+        top: 33rem;
+    }
+
+    .btn-hold {
+        top: 37rem;
+    }
+
+    nav .container .brand-logo {
+        font-size: 4rem;
+    }
+
+    .nav-wrapper .sidenav-trigger {
+        font-size: 3rem;
+    }
+
+}
